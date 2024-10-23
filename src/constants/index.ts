@@ -1,0 +1,1 @@
+export const initialShareholder = {index: 0, name: '', shareNum: null, shareRatio: 0.0 };
