@@ -35,4 +35,40 @@
     -webkit-appearance: none;
     margin: 0;
   }
+
+  .th-styles {
+    @apply h-[32px] bg-gray-400 text-center text-[13px] font-bold text-white;
+  }
+
+  .td-styles {
+    @apply cursor-pointer border-t border-gray-200 p-0 text-[13px] text-black;
+  }
+
+  .edit-cell-styles {
+    @apply h-[30px] w-full px-4 text-right;
+  }
+
+  .depth1-styles {
+    @apply h-full w-full bg-gray-200 pl-4 font-black leading-[30px];
+  }
+
+  .depth2-styles {
+    @apply h-full w-full bg-gray-100 pl-8 font-semibold leading-[30px];
+  }
+
+  .depth3-styles {
+    @apply pl-12 font-normal;
+  }
+
+  .depth4-styles {
+    @apply pl-16 font-normal;
+  }
+
+  .depth5-styles {
+    @apply pl-20 font-normal;
+  }
+
+  .depth-pl-common {
+    @apply pr-4 text-right;
+  }
 }
