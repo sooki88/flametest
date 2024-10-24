@@ -45,7 +45,7 @@
   }
 
   .edit-cell-styles {
-    @apply h-[30px] w-full px-3;
+    @apply h-[30px] w-full px-4 text-right;
   }
 
   .depth1-styles {
