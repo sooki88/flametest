@@ -22,3 +22,28 @@ export interface Test2DatasType {
   ntsCodeSole: string | null;
   years?: YearData[];
 }
+
+export interface Test2InputType {
+  success: boolean;
+  val: {
+    BS: Test2DatasType[];
+    IS: Test2DatasType[];
+  };
+}
+
+export interface Test2OutputType {
+  id: string;
+  memberNo: string;
+  customerId: string;
+  refDt: number | null;
+  manual: boolean;
+  temp: boolean;
+  bss?: Array<{
+    stDate: string;
+    data: { [key: string]: string };
+  }>;
+  iss?: Array<{
+    stDate: string;
+    data: { [key: string]: string };
+  }>;
+}
