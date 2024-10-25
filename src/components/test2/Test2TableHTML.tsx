@@ -3,7 +3,7 @@ import { useState } from "react";
 import { test2YearValues } from "../../constants";
 import testJson from "../../../test.json";
 import DownloadIcon from "../../assets/download_wht.svg";
-export default function Test2TableFormik({
+export default function Test2TableHTML({
   tab,
   inputDatas = testJson,
   outputDatas,
