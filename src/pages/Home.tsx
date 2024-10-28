@@ -13,6 +13,9 @@ export default function Home() {
         <li className="underline-offset-2 hover:underline">
           <Link to="/test2HTML">TEST 2 (HTML) 페이지로 이동</Link>
         </li>
+        <li className="underline-offset-2 hover:underline">
+          <Link to="/test2Formik">TEST 2 (Formik) 페이지로 이동</Link>
+        </li>
       </ul>
     </nav>
   );

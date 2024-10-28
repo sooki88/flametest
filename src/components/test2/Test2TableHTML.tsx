@@ -41,7 +41,7 @@ export default function Test2TableHTML({
 
   return (
     <table className="w-full overflow-hidden rounded-lg">
-      <thead className="bg-gray-400 font-bold text-white">
+      <thead className="h-[30px] bg-gray-400 font-bold text-white">
         <tr>
           {headers.map((header) => (
             <th key={header.value} className="">
@@ -65,7 +65,7 @@ export default function Test2TableHTML({
                 };
 
                 return (
-                  <td key={`${headerKey}-${headerIndex}`}>
+                  <td key={`${headerKey}-${headerIndex}`} className="td-styles border-l border-gray-200 px-4">
                     {headerKey === headerKeys[0] ? (
                       <div>{inputDataKey[index].text}</div>
                     ) : headerKey === headerKeys[1] ? (
@@ -73,21 +73,21 @@ export default function Test2TableHTML({
                         type="text"
                         value={findValue(headerKeys[1])}
                         onChange={(e) => onChangeInput(e, headerKeys[1], key.value)}
-                        className=""
+                        className="edit-cell-styles"
                       />
                     ) : headerKey === headerKeys[2] ? (
                       <input
                         type="text"
                         value={findValue(headerKeys[2])}
                         onChange={(e) => onChangeInput(e, headerKeys[2], key.value)}
-                        className=""
+                        className="edit-cell-styles"
                       />
                     ) : (
                       <input
                         type="text"
                         value={findValue(headerKeys[3])}
                         onChange={(e) => onChangeInput(e, headerKeys[3], key.value)}
-                        className=""
+                        className="edit-cell-styles"
                       />
                     )}
                   </td>

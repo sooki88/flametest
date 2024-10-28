@@ -21,6 +21,7 @@ export interface Test2DatasType {
   ntsCode: string;
   ntsCodeSole: string | null;
   years?: YearData[];
+  data?: { [key: string]: string };
 }
 
 export interface Test2InputType {
