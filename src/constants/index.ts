@@ -5,16 +5,16 @@ export const test2TabData = [
   { text: "손익계산서", value: "IS" },
 ];
 
-export const test2Years = ["20221231", "20231231", "20241231"];
+export const test2Years = ["20211231", "20221231", "20231231"];
 
 export const test2YearValues = [
+  { text: "2021.12.31", value: "20211231" },
   { text: "2022.12.31", value: "20221231" },
   { text: "2023.12.31", value: "20231231" },
-  { text: "2024.12.31", value: "20241231" },
 ];
 
 export const outputTest2DataForm = {
-  id: "",
+  id: "재무정보",
   memberNo: "",
   customerId: "",
   refDt: null,
